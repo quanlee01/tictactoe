@@ -9,13 +9,14 @@ int main()
     char b[3][3] = {}; 
     memset(b,'0',sizeof(b));
     int cnt = 0;
-    int res;
+    int res = 100;
     char m[2] = {'O','X'};
     while(1)
     {
         if(9 == cnt)
         {
             cout<<"Tie!"<<'\n';
+            break;
         }
         for(int i = 0; i < 3; ++i)
         {
@@ -234,6 +235,7 @@ int main()
             }
             cout<<'\n';
     }
+    if(res != 100)
     cout<<m[res]<<" win";
     return 0;
 }
