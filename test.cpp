@@ -6,7 +6,8 @@ int isEven(int a)
 }
 int main()
 {
-    char b[3][3] = {{'.'}}; 
+    char b[3][3] = {}; 
+    memset(b,'0',sizeof(b));
     bool end = false;
     int cnt = 0;
     char m[2] = {'O','X'};
@@ -29,8 +30,19 @@ int main()
         }
         else
         {
-            
+            b[x][y] = m[isEven(cnt)];
+            if()
+            cnt++;
+        }
+        cout<<'\n';
+    }
+    for(int i = 0; i < 3; ++i)
+        {
+            for(int j = 0; j < 3; ++j)
+            {
+                cout<<b[i][j]<<' ';
+            }
+            cout<<'\n';
         }
     return 0;
-    }
 }
