@@ -7,7 +7,7 @@ int isEven(int a)
 int main()
 {
     char b[3][3] = {}; 
-    memset(b,'0',sizeof(b));
+    memset(b,'.',sizeof(b));
     int cnt = 0;
     int res = 100;
     char m[2] = {'O','X'};
